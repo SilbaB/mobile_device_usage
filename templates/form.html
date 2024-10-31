@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/templates/style.css"> -->
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <div class="container">
+        
+    <div class="top"> 
+        <h2>Please Enter Your Information</h2>
+    
+        </div>
+        <div class="bottom">
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="john Doe" required><br><br>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="22" min="0" max="100" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@gmail.com" required><br><br>
+        
+                <button type="submit">Submit</button>
+            </form>
+
+    </div>
+    
+    </div>
+   
+    
+</body>
+</html>
